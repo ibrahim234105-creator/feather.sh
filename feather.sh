@@ -10,14 +10,13 @@ display_header() {
     clear
     cat << "EOF"
 ========================================================================
-  _    _  ____  _____ _____ _   _  _____ ____   ______     ________
- | |  | |/ __ \|  __ \_   _| \ | |/ ____|  _ \ / __ \ \   / /___  /
- | |__| | |  | | |__) || | |  \| | |  __| |_) | |  | \ \_/ /   / / 
- |  __  | |  | |  ___/ | | |   \ | | |_ |  _ <| |  | |\   /   / /  
- | |  | | |__| | |    _| |_| |\  | |__| | |_) | |__| | | |   / /__ 
- |_|  |_|\____/|_|   |_____|_| \_|\_____|____/ \____/  |_|  /_____|
-                                                                  
-                    POWERED BY HOPINGBOYZ
+ _____           _   _               ____  _                
+|  ___|__   __ _| |_| |__   ___ _ __|  _ \| | __ _ _   _ ____
+| |_ / _ \ / _` | __| '_ \ / _ \ '__| |_) | |/ _` | | | |_  /
+|  _|  __/| (_| | |_| | | |  __/ |  |  __/| | (_| | |_| |/ / 
+|_|  \___| \__,_|\__|_| |_|\___|_|  |_|   |_|\__,_|\__, /___|
+                                                   |___/                                    
+                    POWERED BY FEATHERPLAYZ
 ========================================================================
 EOF
     echo
@@ -218,7 +217,7 @@ create_new_vm() {
     done
 
     while true; do
-        read -p "$(print_status "INPUT" "Disk size (default: 20G): ")" DISK_SIZE
+        read -p "$(print_status "INPUT" "Disk size (default: 100G): ")" DISK_SIZE
         DISK_SIZE="${DISK_SIZE:-20G}"
         if validate_input "size" "$DISK_SIZE"; then
             break
@@ -226,7 +225,7 @@ create_new_vm() {
     done
 
     while true; do
-        read -p "$(print_status "INPUT" "Memory in MB (default: 2048): ")" MEMORY
+        read -p "$(print_status "INPUT" "Memory in MB (default: 32000): ")" MEMORY
         MEMORY="${MEMORY:-2048}"
         if validate_input "number" "$MEMORY"; then
             break
@@ -234,7 +233,7 @@ create_new_vm() {
     done
 
     while true; do
-        read -p "$(print_status "INPUT" "Number of CPUs (default: 2): ")" CPUS
+        read -p "$(print_status "INPUT" "Number of CPUs (default: 8): ")" CPUS
         CPUS="${CPUS:-2}"
         if validate_input "number" "$CPUS"; then
             break
@@ -748,17 +747,17 @@ main_menu() {
         fi
         
         echo "Main Menu:"
-        echo "  1) Create a new VM"
+        echo "  1) Create a new VM ⚒️"
         if [ $vm_count -gt 0 ]; then
-            echo "  2) Start a VM"
-            echo "  3) Stop a VM"
-            echo "  4) Show VM info"
-            echo "  5) Edit VM configuration"
-            echo "  6) Delete a VM"
-            echo "  7) Resize VM disk"
-            echo "  8) Show VM performance"
+            echo "  2) Start a VM 🟢"
+            echo "  3) Stop a VM 🔴"
+            echo "  4) Show VM info 🌡️"
+            echo "  5) Edit VM configuration 🔗"
+            echo "  6) Delete a VM 🗑️"
+            echo "  7) Resize VM disk 💾"
+            echo "  8) Show VM performance 📈"
         fi
-        echo "  0) Exit"
+        echo "  0) Exit 🚪"
         echo
         
         read -p "$(print_status "INPUT" "Enter your choice: ")" choice
