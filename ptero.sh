@@ -40,7 +40,7 @@ welcome_banner() {
 EOF
     echo -e "${NEON_PURPLE}${BOLD} NEXT GEN ULTRA EDITION - 2025${RESET}"
     echo -e "${GLOW} Ultimate Pterodactyl Control Center${RESET}"
-    echo -e "${DIM} Original Creator: ${BOLD}MahimOp${RESET} ${DIM}| YouTube: @featherplayz01${RESET}"
+    echo -e "${DIM} Original Creator: ${BOLD}FeatherPlayz${RESET} ${DIM}| YouTube: @featherplayz01${RESET}"
     echo -e "${DIM} Discord: https://discord.gg/N5MqeYrYMB${RESET}"
     echo -e "${DANGER}══════════════════════════════════════════════════════════${RESET}\n"
     sleep 1.5
@@ -129,13 +129,13 @@ welcome_banner
 while true; do
     show_menu
     case $choice in
-        1) run_remote_script "https://raw.githubusercontent.com/mahimxyzz/Vps/refs/heads/main/cd/panel2.sh" "PANEL INSTALLATION" ;;
-        2) run_remote_script "https://raw.githubusercontent.com/mahimxyzz/Vps/refs/heads/main/cd/wing2.sh" "WINGS INSTALLATION" ;;
-        3) run_remote_script "https://raw.githubusercontent.com/mahimxyzz/Vps/refs/heads/main/cd/update2.sh" "PANEL UPDATE" ;;
-        4) run_remote_script "https://raw.githubusercontent.com/mahimxyzz/Vps/refs/heads/main/cd/uninstall2.sh" "UNINSTALL TOOLS" ;;
-        5) run_remote_script "https://raw.githubusercontent.com/mahimxyzz/Vps/refs/heads/main/cd/Blueprint2.sh" "BLUEPRINT SETUP" ;;
-        6) run_remote_script "https://raw.githubusercontent.com/mahimxyzz/Vps/refs/heads/main/cd/cloudflare.sh" "CLOUDFLARE SETUP" ;;
-        7) run_remote_script "https://raw.githubusercontent.com/mahimxyzz/Vps/refs/heads/main/cd/th2.sh" "THEME CHANGER" ;;
+        1) run_remote_script "https://raw.githubusercontent.com/ibrahim234105-creator/vps.manager/refs/heads/main/cd/panel2.sh" "PANEL INSTALLATION" ;;
+        2) run_remote_script "https://raw.githubusercontent.com/ibrahim234105-creator/vps.manager/refs/heads/main/cd/wing2.sh" "WINGS INSTALLATION" ;;
+        3) run_remote_script "https://raw.githubusercontent.com/ibrahim234105-creator/vps.manager/refs/heads/main/cd/update2.sh" "PANEL UPDATE" ;;
+        4) run_remote_script "https://raw.githubusercontent.com/ibrahim234105-creator/vps.manager/refs/heads/main/cd/uninstall2.sh" "UNINSTALL TOOLS" ;;
+        5) run_remote_script "https://raw.githubusercontent.com/ibrahim234105-creator/vps.manager/refs/heads/main/cd/Blueprint2.sh" "BLUEPRINT SETUP" ;;
+        6) run_remote_script "https://raw.githubusercontent.com/ibrahim234105-creator/vps.manager/refs/heads/main/cd/cloudflare.sh" "CLOUDFLARE SETUP" ;;
+        7) run_remote_script "https://raw.githubusercontent.com/ibrahim234105-creator/vps.manager/refs/heads/main/cd/th2.sh" "THEME CHANGER" ;;
         8)
             clear
             print_box_header "TAILSCALE INSTALLATION" $NEON_PURPLE
