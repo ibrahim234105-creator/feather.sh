@@ -97,15 +97,15 @@ EOF
 
     echo -e "${R}+----------------------------------------------------------+${N}"
     echo -e "${R}|${W} Status   : ${Y}Ready to use${W}                        ${R}|${N}"
-    echo -e "${R}|${W} Location : ${Y}~/vps123/.idx${W}                       ${R}|${N}"
+    echo -e "${R}|${W} Location : ${Y}~/FREE-VPS/.idx${W}                       ${R}|${N}"
     echo -e "${R}|${W} Tool     : ${Y}IDX Development Environment${W}         ${R}|${N}"
-    echo -e "${R}|${W} Version  : ${Y}Stable 24.05${W}                        ${R}|${N}"
+    echo -e "${R}|${W} Version  : ${Y}Stable 24.50${W}                        ${R}|${N}"
     echo -e "${R}+----------------------------------------------------------+${N}"
 
 else
     echo -e "${R}+----------------------------------------------------------+${N}"
     echo -e "${R}|${Y} [!] IDX Tool already setup - skipping.${W}             ${R}|${N}"
-    echo -e "${R}|${W} Location : ${Y}~/vps123/.idx${W}                          ${R}|${N}"
+    echo -e "${R}|${W} Location : ${Y}~/FREE-VPS/.idx${W}                          ${R}|${N}"
     echo -e "${R}+----------------------------------------------------------+${N}"
 fi
 
